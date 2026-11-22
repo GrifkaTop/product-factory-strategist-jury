@@ -1,0 +1,29 @@
+{
+  "synthetic": true,
+  "baseline_gross_profit": 279000000,
+  "target_gross_profit": 285000000,
+  "margin_per_paid_month": 500,
+  "scenarios": [
+    {
+      "id": "downside", "additional_direct_cost": 300000,
+      "cohorts": [
+        {"id":"nov","first_month":11,"eligible_unique_numbers":4000,"incremental_share_bps_by_month":[300,200]},
+        {"id":"dec","first_month":12,"eligible_unique_numbers":6000,"incremental_share_bps_by_month":[200]}
+      ]
+    },
+    {
+      "id": "planning", "additional_direct_cost": 300000,
+      "cohorts": [
+        {"id":"nov","first_month":11,"eligible_unique_numbers":4000,"incremental_share_bps_by_month":[800,600]},
+        {"id":"dec","first_month":12,"eligible_unique_numbers":6000,"incremental_share_bps_by_month":[600]}
+      ]
+    },
+    {
+      "id": "upside", "additional_direct_cost": 450000,
+      "cohorts": [
+        {"id":"nov","first_month":11,"eligible_unique_numbers":4000,"incremental_share_bps_by_month":[1800,1200]},
+        {"id":"dec","first_month":12,"eligible_unique_numbers":6000,"incremental_share_bps_by_month":[1200]}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+[project]
+name = "product-factory-strategist"
+version = "0.1.0"
+description = "Repository-first product strategy agent with deterministic local tools"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+ingest = [
+  "pypdf==6.21.4",
+  "python-docx==1.2.0",
+  "openpyxl==3.1.5",
+]
+
+[tool.strategist]
+model_access = "provided-by-host"
+paid_api_required = false

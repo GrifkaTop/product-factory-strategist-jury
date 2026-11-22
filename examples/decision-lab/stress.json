@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "expected_revision": 8,
+  "title": "Учебная оценка устойчивости выбора",
+  "value_unit": "условные рубли за месяц",
+  "reference_option_id": "O-STATUS",
+  "synthetic": true,
+  "assumptions": [
+    {"id": "users", "unit": "пользователи", "base": 1000, "low": 0, "high": 3000, "note": "Учебный диапазон, спрос не измерен"}
+  ],
+  "models": [
+    {"option_id": "O-STATUS", "intercept": 0, "coefficients": {}, "note": "Нулевой прирост относительно текущего положения"},
+    {"option_id": "O-PILOT", "intercept": -35000, "coefficients": {"users": 40}, "note": "Условный вклад на пользователя за месяц"},
+    {"option_id": "O-PLATFORM", "intercept": -120000, "coefficients": {"users": 80}, "note": "Условные фиксированные затраты и вклад"},
+    {"option_id": "O-CLOSE", "intercept": -5000, "coefficients": {}, "note": "Условная стоимость сворачивания"}
+  ],
+  "scenarios": [
+    {"id": "low", "values": {"users": 500}, "note": "Слабый охват"},
+    {"id": "high", "values": {"users": 2500}, "note": "Больший охват"},
+    {"id": "unknown", "values": {"users": null}, "note": "Охват неизвестен"}
+  ]
+}

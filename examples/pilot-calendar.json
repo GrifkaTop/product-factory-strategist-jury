@@ -1,0 +1,10 @@
+{
+  "recruitment_days": 42,
+  "observation_days": 7,
+  "analysis_days": 3,
+  "decision_horizon_days": 56,
+  "confidence_level": 0.95,
+  "interval_rule": "lower_bound_meets_minimum",
+  "target_total": 600,
+  "eligible_per_week": 90
+}

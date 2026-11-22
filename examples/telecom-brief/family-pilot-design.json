@@ -1,0 +1,16 @@
+{
+  "synthetic": true,
+  "baseline_rate": 0.20,
+  "minimum_reduction": 0.03,
+  "planning_reduction": 0.08,
+  "power": 0.80,
+  "calendar": {
+    "recruitment_days": 42,
+    "observation_days": 7,
+    "analysis_days": 7,
+    "decision_horizon_days": 56,
+    "confidence_level": 0.95,
+    "interval_rule": "lower_bound_meets_minimum",
+    "eligible_per_week": 500
+  }
+}

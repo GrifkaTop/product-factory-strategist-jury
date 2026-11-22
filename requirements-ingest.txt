@@ -1,0 +1,5 @@
+# Optional free local document readers; core CLI does not require these.
+# Versions verified against the bundled authoring runtime on 2026-11-17.
+pypdf==6.21.4
+python-docx==1.2.0
+openpyxl==3.1.5

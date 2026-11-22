@@ -1,0 +1,11 @@
+{
+  "synthetic": true,
+  "baseline_gross_profit": 279000000,
+  "target_gross_profit": 285000000,
+  "margin_per_paid_month": 500,
+  "scenarios": [
+    {"id":"downside","additional_paid_months":6000,"additional_direct_cost":500000},
+    {"id":"planning","additional_paid_months":12000,"additional_direct_cost":500000},
+    {"id":"upside","additional_paid_months":15000,"additional_direct_cost":750000}
+  ]
+}

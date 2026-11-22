@@ -1,0 +1,26 @@
+{
+  "protected_fields": ["recipient", "allocated_volume"],
+  "success_fields": ["recipient", "allocated_volume"],
+  "states": {
+    "pending": {
+      "display_status": "pending", "visible_fields": [],
+      "message": "Запрос отправлен, выдача ещё проверяется.",
+      "next_action": "Проверьте статус позже. Повторно отправлять запрос пока не нужно."
+    },
+    "confirmed": {
+      "display_status": "success", "visible_fields": ["recipient", "allocated_volume"],
+      "message": "Объём выделен. В кабинете указан получатель и выделенный объём.",
+      "next_action": "Откройте результат в кабинете."
+    },
+    "failed": {
+      "display_status": "failure", "visible_fields": [],
+      "message": "Выдача не подтверждена.",
+      "next_action": "Проверьте доступный объём и итоговый статус. При расхождении обратитесь в поддержку."
+    },
+    "access_revoked": {
+      "display_status": "unavailable", "visible_fields": [],
+      "message": "Действие недоступно.",
+      "next_action": "Проверьте свои права в настройках группы."
+    }
+  }
+}
